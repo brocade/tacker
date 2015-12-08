@@ -1,0 +1,99 @@
+#Below is complete list of exported variables. The values for the exported variables  highlighted in 
+#RED are specific to the end user environment and must be filled in by the end user. 
+# The other exported variables have default values already filled in and need not be changed.
+
+#export LOGIN_USER=ubuntu
+# MY_PUBLIC_IP ⇒ IP address of the external network interface
+export MY_PUBLIC_IP=10.18.132.188
+# MY_IP ⇒ IP address of the management network interface
+export MY_IP=10.18.132.188
+# external network CIDR – floating IPs and router external gateway will be # allocated from this network by neutron
+#export NEUTRON_EXTERNAL_NETWORK_SUBNET_CIDR=10.18.161.0/24
+# start address for the subnet
+#export NEUTRON_EXTERNAL_NETWORK_SUBNET_START=10.18.161.203
+# end address for the subnet
+#export NEUTRON_EXTERNAL_NETWORK_SUBNET_END=10.18.161.206
+# management network CIDR from where the router VM IP will be allocated 
+#export MGMT_NETWORK_CIDR=10.18.161.0/24
+# start address for the management subnet
+#export MGMT_NETWORK_START=10.18.161.207
+# end address for the management subnet
+#export MGMT_NETWORK_END=10.18.161.210
+
+export EXTERNAL_BRIDGE=br-ex
+export MANAGEMENT_NETWORK_NAME=mng
+export EXT_NET_NAME=public
+export METADATA_SECRET=openstack
+export RABBITMQ_IP=$MY_IP
+export MYSQL_IP=$MY_IP
+export KEYSTONE_IP=$MY_IP
+export GLANCE_IP=$MY_IP
+export NEUTRON_IP=$MY_IP
+export NOVA_IP=$MY_IP
+export CINDER_IP=$MY_IP
+export HORIZON_IP=$MY_PUBLIC_IP
+export HEAT_IP=$MY_IP
+export MYSQL_PWD=notmysql
+export KEYSTONE_DB=keystone
+export KEYSTONE_DBUSER=keystone
+export KEYSTONE_DBPASS=notkeystone
+export KEYSTONE_SVC_NAME=keystone
+export SERVICE_TOKEN=ADMIN
+export SERVICE_ENDPOINT=http://$KEYSTONE_IP:35357/v3
+export SERVICE_TENANT=service
+export ADMIN_TENANT_NAME=admin
+export DEMO_TENANT_NAME=demo
+export ADMIN_ROLE=admin
+export MEMBER_USER=demo
+export MEMBER_USER_PWD=devstack
+export ADMIN_USER=admin
+export ADMIN_USER_PWD=devstack
+export DEMO_USER=demo
+export DEMO_USER_PWD=devstack
+export USER_ROLE=user
+export REGION=RegionOne
+export GLANCE_DB=glance
+export GLANCE_DBUSER=glance
+export GLANCE_DBPASS=notglance
+export GLANCE_SVC_NAME=glance
+export GLANCE_SVC_USER=glance
+export GLANCE_SVC_USER_PWD=notglance
+export GLANCE_FLAVOR=keystone
+export NOVA_DB=nova
+export NOVA_DBUSER=nova
+export NOVA_DBPASS=notnova
+export NOVA_SVC_NAME=nova
+export NOVA_SVC_USER=nova
+export NOVA_SVC_USER_PWD=notnova
+export NEUTRON_DB=neutron
+export NEUTRON_DBPASS=notneutron
+export NEUTRON_DBUSER=neutron
+export NEUTRON_SVC_NAME=neutron
+export NEUTRON_SVC_USER=neutron
+export NEUTRON_SVC_USER_PWD=notneutron
+export HEAT_DB=heat
+export HEAT_DBUSER=heat
+export HEAT_DBPASS=notheat
+export HEAT_SVC_NAME=heat
+export HEAT_CFN_SVC_NAME=heat-cfn
+export HEAT_SVC_USER=heat
+export HEAT_SVC_USER_PWD=notheat
+export HEAT_ADMIN_USER=heat
+export HEAT_ADMIN_PWD=notheat
+export HEAT_DOMAIN_ADMIN=heat_domain_admin
+export HEAT_DOMAIN_ADMIN_PWD=notheat
+export HEAT_STACK_USER=heat_stack_user
+export HEAT_STACK_USER_PWD=notheat
+export OS_TOKEN=ADMIN
+export OS_URL=http://$KEYSTONE_IP:35357/v3
+export OS_IDENTITY_API_VERSION=3
+export ADMIN_RC_FILE=~/admin-openrc
+export DEMO_RC_FILE=~/demo-openrc
+export RABBIT_USER=openstack
+export RABBIT_PWD=openstack
+export TACKER_DB=tacker
+export TACKER_DBUSER=tacker
+export TACKER_DBPASS=nottacker
+export TACKER_SVC_NAME=tacker
+export TACKER_SVC_USER=tacker
+export TACKER_SVC_USER_PWD=nottacker
