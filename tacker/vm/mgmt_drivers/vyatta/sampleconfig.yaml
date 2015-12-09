@@ -1,0 +1,5 @@
+vdus:
+  vdu1:
+    config:
+      - set interfaces dataplane dp0s4 address 10.10.222.29/24
+      - set interfaces dataplane dp0s5 address 10.10.221.29/24
